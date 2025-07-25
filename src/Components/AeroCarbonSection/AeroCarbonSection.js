@@ -23,7 +23,8 @@ const AeroCarbonSection = () => {
                     autoPlay
                     muted
                     loop
-                    style={{ width: "100%", maxWidth: "500px" }}
+                    style={{ width: "100%", maxWidth: "500px" ,
+        border:"none"}}
                 />
             </div>
 

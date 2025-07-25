@@ -42,7 +42,6 @@ const HeroSection = () => {
         width: "100vw",
         overflow: "hidden",
         boxSizing: "border-box",
-        border:"none"
       }}
     >
       {/* Text Block */}
@@ -102,7 +101,8 @@ const HeroSection = () => {
         autoPlay
         muted
         loop
-        style={{ width: "100%", objectFit: "cover" }}
+        style={{ width: "100%", objectFit: "cover" ,
+        border:"none"}}
       />
     </div>
   );
