@@ -42,6 +42,7 @@ const HeroSection = () => {
         width: "100vw",
         overflow: "hidden",
         boxSizing: "border-box",
+        border:"none"
       }}
     >
       {/* Text Block */}
