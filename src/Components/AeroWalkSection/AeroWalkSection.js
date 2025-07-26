@@ -123,6 +123,7 @@ const AeroWalkSection = () => {
                     src={Aerowalk_animation}
                     autoPlay
                     muted
+                    playsInline
                     loop
                     style={{ width: "100%", maxWidth: "500px" ,
         border:"none"}}

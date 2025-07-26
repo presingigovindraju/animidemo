@@ -104,6 +104,7 @@ const HeroSection = () => {
         autoPlay
         muted
         loop
+        playsInline
         style={{
           width: "100%", objectFit: "cover",
           border: "none"

@@ -91,6 +91,7 @@ const AeroFlySection = () => {
                 <video
                     src={Aerofly_animation}
                     autoPlay
+                    playsInline
                     muted
                     loop
                     style={{ width: "100%", maxWidth: "500px",

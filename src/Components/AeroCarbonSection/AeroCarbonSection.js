@@ -23,6 +23,7 @@ const AeroCarbonSection = () => {
                     autoPlay
                     muted
                     loop
+                    playsInline
                     style={{ width: "100%", maxWidth: "500px" ,
         border:"none"}}
                 />
