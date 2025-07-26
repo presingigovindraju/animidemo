@@ -32,7 +32,9 @@
 
 import React from "react";
 import animationVideo from "./Videos/Aero Series Header animation.mp4";
-import aeroLogo from "./aeroLogo/aeroLogo.png";
+// import aeroLogo from "./aeroLogo/aeroLogo.png";
+import aeroLogo1 from "./aeroLogo/aeroLogo1.png";
+import aeroLogo2 from "./aeroLogo/aeroLogo2.png";
 
 const HeroSection = () => {
   return (
@@ -42,58 +44,59 @@ const HeroSection = () => {
         width: "100vw",
         overflow: "hidden",
         boxSizing: "border-box",
+        // borderBottom:"2px solid red"
       }}
     >
       {/* Text Block */}
       <div
         style={{
           position: "absolute",
-          top: "25%",
-          left: "6.5%",
-          color: "white",
-          fontWeight: 700,
-          lineHeight: "1.2",
-          fontSize: "3rem",
-          fontFamily: "'Montserrat', sans-serif",
+          top: "32%", // Responsive top spacing
+          left: "8%", // Responsive left spacing
+          fontSize: "2.5vw", // Responsive font size
+          // border: "2px solid red",
+          maxWidth: "95%", // Prevents overflow
         }}
       >
-        <div>Introducing</div>
+        <div
+          style={{
+            color: "white",
+            lineHeight: "1.2",
+            fontSize: "3.5vw",
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: "700",
+          }}
+        >
+          Introducing
+        </div>
 
-        {/* Line with the aero logo embedded perfectly */}
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            color: "white",
+            lineHeight: "1.2",
+            fontSize: "3.5vw",
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: "700",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <span>the&nbsp;</span>
 
-          {/* Relative wrapper with absolutely placed logo */}
-          <span style={{ position: "relative", display: "inline-block", fontFamily: "Century Gothic", fontWeight:500 }}>
-            aero
-            <sup
-              style={{
-                // fontSize: "0.5em",
-                verticalAlign: "top",
-                // marginLeft: "2px",
-                fontWeight:"normal",
-                fontSize:"18px"
-              }}
-            >
-              ™
-            </sup>
-
-            {/* Uncomment if you want to overlay the logo image */}
-            {/* <img
-              src={aeroLogo}
-              alt="aeroLogo_img"
-              style={{
-                position: "absolute",
-                top: "5px",
-                left: "-28px",
-                height: "1.8rem",
-              }}
-            /> */}
-          </span>
+          <img
+            src={aeroLogo1}
+            alt="aeroLogo_img"
+            style={{
+              height: "2.5vw", // Responsive height
+              width: "auto",   // Maintain aspect ratio
+              verticalAlign: "middle",
+            }}
+          />
 
           <span>&nbsp;Series</span>
         </div>
       </div>
+
 
       {/* Background video */}
       <video
@@ -101,8 +104,10 @@ const HeroSection = () => {
         autoPlay
         muted
         loop
-        style={{ width: "100%", objectFit: "cover" ,
-        border:"none"}}
+        style={{
+          width: "100%", objectFit: "cover",
+          border: "none"
+        }}
       />
     </div>
   );
