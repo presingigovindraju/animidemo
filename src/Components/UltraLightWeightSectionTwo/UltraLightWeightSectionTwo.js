@@ -39,7 +39,7 @@ const UltraLightWeightSectionTwo = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          maxWidth: "1100px",
+          maxWidth: "1140px",
           margin: "0 auto",
           position: "relative",
           rowGap: "85px", // Add vertical space between rows
@@ -52,11 +52,11 @@ const UltraLightWeightSectionTwo = () => {
             key={index}
             style={{
               flex: "1 1 300px",
-              maxWidth: "366px",
+              maxWidth: "380px",
               minWidth: "280px",
               backgroundColor: "#E6F2FB",
               position: "relative",
-              paddingTop: "80px", // space for image
+              paddingTop: "70px", // space for image
               boxSizing: "border-box",
             }}
           >
@@ -75,11 +75,11 @@ const UltraLightWeightSectionTwo = () => {
             />
 
             {/* Text Content */}
-            <div style={{ padding: "20px", textAlign: "center" }}>
+            <div style={{ textAlign: "center",width:"360px" }}>
               <h3
                 style={{
                   fontWeight: "700",
-                  marginBottom: "10px",
+                  marginBottom: "6px",
                   color: "#000",
                 }}
               >
