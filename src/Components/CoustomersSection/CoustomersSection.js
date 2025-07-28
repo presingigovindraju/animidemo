@@ -55,7 +55,7 @@ const CustomersSection = () => {
           color: "#444445",
         }}
       >
-        Offer the upgrade they deserve, at a price they don’t expect
+        Offer the upgrade they deserve, at a price they don't expect
       </p>
 
       <p
@@ -65,7 +65,7 @@ const CustomersSection = () => {
           color: "#666",
         }}
       >
-        First-class mobility doesn’t have to mean paying a premium price. The
+        First-class mobility doesn't have to mean paying a premium price. The
         new, ultra-lightweight Aero line blends sleek, modern design with
         comfort-focused engineering to impress your customers at every turn.
         With competitive pricing that supports your margins, the Aero line helps
