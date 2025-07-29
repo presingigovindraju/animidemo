@@ -45,6 +45,7 @@ const HeroSection = () => {
         overflow: "hidden",
         boxSizing: "border-box",
         // borderBottom:"2px solid red"
+        // height:"470px"
       }}
     >
       {/* Text Block */}
@@ -53,17 +54,16 @@ const HeroSection = () => {
           position: "absolute",
           top: "32%", // Responsive top spacing
           left: "8%", // Responsive left spacing
-          fontSize: "2.5vw", // Responsive font size
           // border: "2px solid red",
           maxWidth: "95%", // Prevents overflow
         }}
       >
-        <div
+        <div id="bos"
           style={{
-            color: "white",
+            color: "#FFF",
             lineHeight: "1.2",
             fontSize: "3.5vw",
-            fontFamily: "'Montserrat', sans-serif",
+            fontFamily: "Montserrat",
             fontWeight: "700",
           }}
         >
@@ -72,10 +72,10 @@ const HeroSection = () => {
 
         <div
           style={{
-            color: "white",
+            color: "#FFF",
             lineHeight: "1.2",
             fontSize: "3.5vw",
-            fontFamily: "'Montserrat', sans-serif",
+            fontFamily: "Montserrat",
             fontWeight: "700",
             display: "flex",
             alignItems: "center",

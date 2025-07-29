@@ -32,24 +32,160 @@ const FormSection = () => {
     };
 
     return (
-        <div
+//         <div
+//             style={{
+//                 maxWidth: "1091px",
+//                 margin: "60px auto",
+//                 textAlign: "center",
+//                 fontFamily: "'Montserrat', sans-serif",
+//                 padding: "0 20px",
+//                 border:"2px solid red"
+//             }}
+//         >
+//             <h2
+//                 style={{
+//                    color: "#444445",
+// textalign: "center",
+// fontfamily: "Montserrat",
+// fontsize:" 40px",
+// fontstyle: "normal",
+// fontweight: "600",
+// lineheight:" 41px", 
+// letterspacing:  "-0.25px"
+               
+//                 }}
+//             >
+//                 See how <svg xmlns="http://www.w3.org/2000/svg" width="64" height="15" viewBox="0 0 104 25" fill="none">
+//                     <g clip-path="url(#clip0_119_60)">
+//                         <path d="M14.126 3.61377L14.1091 3.61123L14.0104 3.59467C13.4937 3.5106 12.9692 3.46729 12.4446 3.46729C11.9201 3.46729 11.3969 3.50932 10.8788 3.59467C6.30088 4.33858 2.94336 8.23902 2.94336 12.7891C2.94336 17.3392 6.23596 21.1683 10.7555 21.9632L10.7737 21.9657L10.8788 21.9823C11.3956 22.0663 11.9201 22.1084 12.4446 22.1084C12.9692 22.1084 13.4924 22.0663 14.0104 21.9823C18.5871 21.2384 21.9459 17.3379 21.9459 12.7878C21.9459 8.23774 18.6494 4.40482 14.126 3.6125V3.61377ZM13.8261 20.8944C13.3704 20.9683 12.9069 21.0065 12.4446 21.0065C11.9824 21.0065 11.5189 20.9696 11.0632 20.8944L10.9541 20.8766C6.97082 20.176 4.07032 16.7571 4.07032 12.7891C4.07032 8.82115 7.02925 5.3398 11.0645 4.68378C11.5202 4.6099 11.9837 4.57169 12.4459 4.57169C12.9082 4.57169 13.3704 4.6099 13.8261 4.68378L13.9287 4.70034C17.9159 5.3984 20.8203 8.81733 20.8203 12.7891C20.8203 16.7609 17.8613 20.2384 13.8274 20.8944H13.8261Z" fill="#454546" />
+//                         <path d="M13.9871 0.672579C13.4755 0.610162 12.9601 0.57959 12.4446 0.57959C11.9292 0.57959 11.4137 0.610162 10.9022 0.672579C4.67664 1.42668 0 6.63788 0 12.7892C0 18.9404 4.67664 24.1516 10.9035 24.9057C11.415 24.9682 11.9305 24.9987 12.4459 24.9987C12.9614 24.9987 13.4768 24.9669 13.9884 24.9057C16.2877 24.6268 18.4534 23.7262 20.2555 22.2982C20.3606 22.2154 20.5009 22.1989 20.6229 22.2562C20.7449 22.3135 20.8203 22.4307 20.8203 22.5632V24.6H24.8906V12.7892C24.8906 6.63788 20.2139 1.42668 13.9871 0.672579ZM14.0104 21.9836C13.4937 22.0677 12.9692 22.1097 12.4446 22.1097C11.9201 22.1097 11.3956 22.0677 10.8788 21.9836L10.7737 21.967L10.7555 21.9645C6.23465 21.1696 2.94335 17.2934 2.94335 12.7904C2.94335 8.28748 6.30217 4.33991 10.8801 3.59472C11.3969 3.51065 11.9214 3.46734 12.4459 3.46734C12.9705 3.46734 13.495 3.50938 14.0117 3.59472L14.1104 3.61128L14.126 3.61383C18.6494 4.40615 21.9459 8.28366 21.9459 12.7892C21.9459 17.2947 18.5884 21.2397 14.0104 21.9836Z" fill="#454546" />
+//                         <path d="M53.8383 11.2771C53.0684 5.16789 47.7582 0.57959 41.4872 0.57959C35.2162 0.57959 29.906 5.16916 29.136 11.2771C29.0724 11.779 29.0413 12.2847 29.0413 12.7892C29.0413 13.2936 29.0724 13.8006 29.136 14.3025C29.906 20.4104 35.2175 25 41.4872 25C44.437 25 47.2765 23.9822 49.5278 22.111L50.7483 21.097L47.8699 18.2717L46.8364 19.1137C45.3303 20.3416 43.4464 21.0066 41.4885 21.0066C37.8272 21.0066 34.5696 18.6615 33.4868 15.2285C33.4543 15.1241 33.4725 15.0132 33.5387 14.9254C33.6049 14.8375 33.7062 14.7865 33.8179 14.7865H53.8461L53.9162 13.4133C53.9266 13.2057 53.9318 12.9981 53.9318 12.7892C53.9318 12.2835 53.9007 11.7777 53.837 11.2771H53.8383ZM33.727 11.8975C33.2648 11.8975 32.8766 11.7064 32.6 11.3434C32.3235 10.9803 32.2482 10.56 32.3793 10.1256C33.5738 6.17803 37.2922 3.46734 41.4872 3.46734C45.6821 3.46734 49.4006 6.17803 50.5951 10.1256C50.7262 10.56 50.6496 10.9803 50.3744 11.3434C50.0978 11.7064 49.7096 11.8975 49.2474 11.8975H33.727ZM48.9215 21.0219C48.9215 21.0461 48.9176 21.069 48.9111 21.0919C48.9163 21.069 48.9202 21.0461 48.9215 21.0219C48.9215 20.9977 48.9215 20.9747 48.9176 20.9505C48.9215 20.9735 48.9228 20.9977 48.9215 21.0219Z" fill="#454546" />
+//                         <path d="M41.4872 3.46729C37.2922 3.46729 33.5737 6.17797 32.3793 10.1255C32.2481 10.5599 32.3247 10.9803 32.6 11.3433C32.8765 11.7064 33.2647 11.8974 33.7269 11.8974H49.2474C49.7096 11.8974 50.0978 11.7064 50.3743 11.3433C50.6509 10.9803 50.7262 10.5599 50.595 10.1255C49.4006 6.17797 45.6821 3.46729 41.4872 3.46729ZM49.4369 10.6542C49.3707 10.7421 49.2694 10.793 49.1578 10.793H33.8191C33.7075 10.793 33.6062 10.7433 33.54 10.6542C33.4738 10.5663 33.4556 10.4555 33.4881 10.351C34.5748 6.91679 37.8245 4.57169 41.4885 4.57169C45.1524 4.57169 48.4073 6.91679 49.4901 10.3523C49.5226 10.4567 49.5044 10.5676 49.4382 10.6555L49.4369 10.6542Z" fill="#454546" />
+//                         <path d="M86.8021 0.672579C86.2905 0.610162 85.7751 0.57959 85.2597 0.57959C84.7442 0.57959 84.2288 0.610162 83.7172 0.672579C77.4904 1.42795 72.8137 6.63788 72.8137 12.7892C72.8137 18.9404 77.4904 24.1516 83.7172 24.9057C84.2288 24.9682 84.7442 24.9987 85.2597 24.9987C85.7751 24.9987 86.2905 24.9669 86.8021 24.9057C93.0276 24.1504 97.7056 18.9404 97.7056 12.7892C97.7056 6.63788 93.0289 1.42668 86.8021 0.672579ZM86.8255 21.9836C86.3087 22.0677 85.7842 22.1097 85.2597 22.1097C84.7351 22.1097 84.2106 22.0677 83.6938 21.9836L83.5887 21.967L83.5705 21.9645C79.0497 21.1696 75.7584 17.2934 75.7584 12.7904C75.7584 8.28748 79.1159 4.33991 83.6938 3.596C84.2106 3.51192 84.7351 3.46861 85.2597 3.46861C85.7842 3.46861 86.3087 3.51065 86.8255 3.596L86.9241 3.61256L86.941 3.6151C91.4644 4.40742 94.7609 8.28493 94.7609 12.7904C94.7609 17.2959 91.4034 21.241 86.8255 21.9849V21.9836Z" fill="#454546" />
+//                         <path d="M86.9409 3.61377L86.9241 3.61123L86.8254 3.59467C86.3086 3.5106 85.7841 3.46729 85.2596 3.46729C84.7351 3.46729 84.2118 3.50932 83.6938 3.59467C79.1158 4.33858 75.7583 8.23902 75.7583 12.7891C75.7583 17.3392 79.0509 21.1683 83.5704 21.9632L83.5886 21.9657L83.6938 21.9823C84.2105 22.0663 84.7351 22.1084 85.2596 22.1084C85.7841 22.1084 86.3073 22.0663 86.8254 21.9823C91.4021 21.2384 94.7609 17.3379 94.7609 12.7878C94.7609 8.23774 91.4644 4.40482 86.9409 3.6125V3.61377ZM86.641 20.8944C86.1853 20.9683 85.7218 21.0065 85.2596 21.0065C84.7974 21.0065 84.3339 20.9696 83.8781 20.8944L83.7691 20.8766C79.7858 20.176 76.884 16.7571 76.884 12.7891C76.884 8.82115 79.8429 5.3398 83.8781 4.68378C84.3339 4.6099 84.7974 4.57169 85.2596 4.57169C85.7218 4.57169 86.184 4.6099 86.6397 4.68378L86.7423 4.70034C90.7295 5.3984 93.6339 8.81733 93.6339 12.7891C93.6339 16.7609 90.675 20.2384 86.641 20.8944Z" fill="#454546" />
+//                         <path d="M69.6017 1.34136C63.7435 1.81649 59.0046 6.27104 58.284 11.9981C58.2204 12.5 58.1892 13.0057 58.1892 13.5102C58.1892 13.5853 58.1892 13.6605 58.1892 13.7331V25H62.2595V13.7586C62.2608 13.6758 62.2595 13.593 62.2595 13.5102C62.2595 13.0567 62.2972 12.6032 62.3738 12.1548C62.9944 8.47984 66.0805 5.67107 69.86 5.32714L71.1973 5.20613V1.21143L69.603 1.34136H69.6017Z" fill="#454546" />
+//                         <path d="M99.648 0V0.677673H98.5457V3.53867H97.7316V0.677673H96.6345V0H99.648Z" fill="#454546" />
+//                         <path d="M100.997 0L102.047 2.16295L103.094 0H104.001V3.53867H103.269V1.15281L102.311 3.17946H101.78L100.822 1.15281V3.53867H100.084V0H100.996H100.997Z" fill="#454546" />
+//                     </g>
+//                     <defs>
+//                         <clipPath id="clip0_119_60">
+//                             <rect width="104" height="25" fill="white" />
+//                         </clipPath>
+//                     </defs>
+//                 </svg> can take
+//                 <br />
+//                 your showroom to new heights.
+//             </h2>
+
+//             <p style={{
+//                 color: "#444445",
+// fontfamily: "Montserrat",
+// fontsize: "24px",
+// fontstyle: "normal",
+// fontweight: "400",
+// lineheight: "43px",
+// letterspacing:"-0.25px"
+// }}>
+//                 Contact Your Sales Representative or enroll below for more information!
+//             </p>
+
+//             <form style={{border:"2px solid red"}} onSubmit={handleSubmit}>
+//                 <div style={{ marginBottom: "15px", textAlign: "left" }}>
+//                     <label style={{ display: "block", marginBottom: "5px" }}>First Name</label>
+//                     <input
+//                         type="text"
+//                         name="firstName"
+//                         value={formData.firstName}
+//                         onChange={handleChange}
+//                         style={{
+//                             width: "100%",
+//                             padding: "10px",
+//                             borderRadius: "6px",
+//                             border: "1px solid #ccc",
+//                             fontSize: "14px",
+//                         }}
+//                     />
+//                 </div>
+
+//                 <div style={{ marginBottom: "15px", textAlign: "left" }}>
+//                     <label style={{ display: "block", marginBottom: "5px" }}>Last Name</label>
+//                     <input
+//                         type="text"
+//                         name="lastName"
+//                         value={formData.lastName}
+//                         onChange={handleChange}
+//                         style={{
+//                             width: "100%",
+//                             padding: "10px",
+//                             borderRadius: "6px",
+//                             border: "1px solid #ccc",
+//                             fontSize: "14px",
+//                         }}
+//                     />
+//                 </div>
+
+//                 <div style={{ marginBottom: "25px", textAlign: "left" }}>
+//                     <label style={{ display: "block", marginBottom: "5px" }}>Email</label>
+//                     <input
+//                         type="email"
+//                         name="email"
+//                         value={formData.email}
+//                         onChange={handleChange}
+//                         style={{
+//                             width: "100%",
+//                             padding: "10px",
+//                             borderRadius: "6px",
+//                             border: "1px solid #ccc",
+//                             fontSize: "14px",
+//                         }}
+//                     />
+//                 </div>
+
+//                 <button
+//                     type="submit"
+//                     style={{
+//                         backgroundColor: "#6DB7F2",
+//                         color: "#000",
+//                         padding: "10px 30px",
+//                         border: "none",
+//                         borderRadius: "25px",
+//                         fontWeight: "600",
+//                         fontSize: "16px",
+//                         cursor: "pointer",
+//                     }}
+//                 >
+//                     Submit
+//                 </button>
+//             </form>
+//         </div>
+<div
             style={{
-                maxWidth: "500px",
+                // maxWidth: "1091px",
                 margin: "60px auto",
                 textAlign: "center",
-                fontFamily: "'Montserrat', sans-serif",
+                fontFamily: "Montserrat",
                 padding: "0 20px",
+                // border:"2px solid red"
             }}
         >
             <h2
                 style={{
-                    fontWeight: "700",
-                    fontSize: "24px",
-                    marginBottom: "10px",
-                    color: "#333",
+                   color: "#444445",
+textAlign: "center",
+fontFamily: "Montserrat",
+fontSize: "clamp(24px, 4vw, 40px)",
+fontStyle: "normal",
+fontWeight: "600",
+lineHeight:"1.2", 
+letterSpacing:  "-0.25px",
+// border:"2px solid red",
+maxWidth: "1091px",
+maxHeight: "164px",
+margin:"0 auto"
+               
                 }}
             >
-                See how <svg xmlns="http://www.w3.org/2000/svg" width="64" height="15" viewBox="0 0 104 25" fill="none">
+                See how <svg xmlns="http://www.w3.org/2000/svg" style={{}} width="3.5em" height="0.8em" viewBox="0 0 104 25" fill="none">
                     <g clip-path="url(#clip0_119_60)">
                         <path d="M14.126 3.61377L14.1091 3.61123L14.0104 3.59467C13.4937 3.5106 12.9692 3.46729 12.4446 3.46729C11.9201 3.46729 11.3969 3.50932 10.8788 3.59467C6.30088 4.33858 2.94336 8.23902 2.94336 12.7891C2.94336 17.3392 6.23596 21.1683 10.7555 21.9632L10.7737 21.9657L10.8788 21.9823C11.3956 22.0663 11.9201 22.1084 12.4446 22.1084C12.9692 22.1084 13.4924 22.0663 14.0104 21.9823C18.5871 21.2384 21.9459 17.3379 21.9459 12.7878C21.9459 8.23774 18.6494 4.40482 14.126 3.6125V3.61377ZM13.8261 20.8944C13.3704 20.9683 12.9069 21.0065 12.4446 21.0065C11.9824 21.0065 11.5189 20.9696 11.0632 20.8944L10.9541 20.8766C6.97082 20.176 4.07032 16.7571 4.07032 12.7891C4.07032 8.82115 7.02925 5.3398 11.0645 4.68378C11.5202 4.6099 11.9837 4.57169 12.4459 4.57169C12.9082 4.57169 13.3704 4.6099 13.8261 4.68378L13.9287 4.70034C17.9159 5.3984 20.8203 8.81733 20.8203 12.7891C20.8203 16.7609 17.8613 20.2384 13.8274 20.8944H13.8261Z" fill="#454546" />
                         <path d="M13.9871 0.672579C13.4755 0.610162 12.9601 0.57959 12.4446 0.57959C11.9292 0.57959 11.4137 0.610162 10.9022 0.672579C4.67664 1.42668 0 6.63788 0 12.7892C0 18.9404 4.67664 24.1516 10.9035 24.9057C11.415 24.9682 11.9305 24.9987 12.4459 24.9987C12.9614 24.9987 13.4768 24.9669 13.9884 24.9057C16.2877 24.6268 18.4534 23.7262 20.2555 22.2982C20.3606 22.2154 20.5009 22.1989 20.6229 22.2562C20.7449 22.3135 20.8203 22.4307 20.8203 22.5632V24.6H24.8906V12.7892C24.8906 6.63788 20.2139 1.42668 13.9871 0.672579ZM14.0104 21.9836C13.4937 22.0677 12.9692 22.1097 12.4446 22.1097C11.9201 22.1097 11.3956 22.0677 10.8788 21.9836L10.7737 21.967L10.7555 21.9645C6.23465 21.1696 2.94335 17.2934 2.94335 12.7904C2.94335 8.28748 6.30217 4.33991 10.8801 3.59472C11.3969 3.51065 11.9214 3.46734 12.4459 3.46734C12.9705 3.46734 13.495 3.50938 14.0117 3.59472L14.1104 3.61128L14.126 3.61383C18.6494 4.40615 21.9459 8.28366 21.9459 12.7892C21.9459 17.2947 18.5884 21.2397 14.0104 21.9836Z" fill="#454546" />
@@ -71,73 +207,181 @@ const FormSection = () => {
                 your showroom to new heights.
             </h2>
 
-            <p style={{ color: "#555", marginBottom: "30px", fontSize: "15px" }}>
+            <p style={{
+                color: "#444445",
+fontFamily: "Montserrat",
+fontSize: "clamp(16px, 3vw, 24px)",
+fontStyle: "normal",
+fontWeight: 400,
+lineHeight: "clamp(24px, 5vw, 43px)", 
+letterSpacing:"-0.25px",
+marginTop:"5px"
+}}>
                 Contact Your Sales Representative or enroll below for more information!
             </p>
 
-            <form onSubmit={handleSubmit}>
-                <div style={{ marginBottom: "15px", textAlign: "left" }}>
-                    <label style={{ display: "block", marginBottom: "5px" }}>First Name</label>
-                    <input
-                        type="text"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        style={{
-                            width: "100%",
-                            padding: "10px",
-                            borderRadius: "6px",
-                            border: "1px solid #ccc",
-                            fontSize: "14px",
-                        }}
-                    />
-                </div>
+            <form
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    margin: "20px auto",
+  }}
+  onSubmit={handleSubmit}
+>
+  <div
+    style={{
+      marginBottom: "15px",
+      textAlign: "left",
+    }}
+  >
+    <label
+      style={{
+        display: "block",
+        marginBottom: "5px",
+        maxWidth: "839px",
+        maxHeight: "28px",
+        // border: "2px solid green",
+        margin: "0 auto", // ✅ This centers the label
+        color: "#444445",
+        fontFamily: "Montserrat",
+        fontSize: "clamp(14px, 2vw, 20px)",
+        fontStyle: "normal",
+        fontWeight: "600",
+        lineHeight: "clamp(20px, 3vw, 30px)", 
+        letterSpacing: "-0.25px",
+paddingLeft:"15px"
+      }}
+    >
+      First Name
+    </label>
+
+    <input
+      type="text"
+      name="firstName"
+      value={formData.firstName}
+      onChange={handleChange}
+      style={{
+        display: "block",      // ✅ Required to center with margin auto
+        margin: "0 auto",      // ✅ This centers the input horizontally
+        maxWidth: "826px",
+        width: "100%",
+        maxHeight: "53px",
+        flexShrink: "0",
+        borderRadius: "10px",
+        border: "1px solid #444445",
+        background: "#FFF",
+        paddingLeft:"10px ",    
+        paddingTop:"10px",
+        paddingBottom:"10px",    // optional for better look
+        fontFamily: "Montserrat", // for matching font
+        fontSize: "16px",
+      }}
+    />
+  </div>
 
                 <div style={{ marginBottom: "15px", textAlign: "left" }}>
-                    <label style={{ display: "block", marginBottom: "5px" }}>Last Name</label>
+                    <label style={{
+                        display: "block",
+                         marginBottom: "5px",
+                         maxWidth: "839px",
+                         alignContent:"center",
+maxHeight: "28px",
+flexshrink: 0,
+// border:"2px solid green",
+margin:"0 auto",
+color: "#444445",
+fontFamily: "Montserrat",
+fontSize: "clamp(14px, 2vw, 20px)",
+fontStyle: "normal",
+fontWeight: "600",
+lineHeight: "clamp(20px, 3vw, 30px)", 
+letterSpacing: "-0.25px",
+paddingLeft:"15px"
+                           }}>Last Name</label>
                     <input
                         type="text"
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleChange}
                         style={{
-                            width: "100%",
-                            padding: "10px",
-                            borderRadius: "6px",
-                            border: "1px solid #ccc",
-                            fontSize: "14px",
-                        }}
+        display: "block",      // ✅ Required to center with margin auto
+        margin: "0 auto",      // ✅ This centers the input horizontally
+        maxWidth: "826px",
+        width: "100%",
+        maxHeight: "53px",
+        flexShrink: "0",
+        borderRadius: "10px",
+        border: "1px solid #444445",
+        background: "#FFF",
+        paddingLeft:"10px ",    
+        paddingTop:"10px",
+        paddingBottom:"10px",        // optional for better look
+        fontFamily: "Montserrat", // for matching font
+        fontSize: "16px",
+      }}
                     />
                 </div>
 
                 <div style={{ marginBottom: "25px", textAlign: "left" }}>
-                    <label style={{ display: "block", marginBottom: "5px" }}>Email</label>
+                    <label style={{
+                        display: "block",
+                         marginBottom: "5px",
+                         maxWidth: "839px",
+                         alignContent:"center",
+maxHeight: "28px",
+flexshrink: 0,
+// border:"2px solid green",
+margin:"0 auto",
+color: "#444445",
+fontFamily: "Montserrat",
+fontSize: "clamp(14px, 2vw, 20px)",
+fontStyle: "normal",
+fontWeight: "600",
+lineHeight: "clamp(20px, 3vw, 30px)", 
+letterSpacing: "-0.25px",
+paddingLeft:"15px"
+                            }}>Email</label>
                     <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         style={{
-                            width: "100%",
-                            padding: "10px",
-                            borderRadius: "6px",
-                            border: "1px solid #ccc",
-                            fontSize: "14px",
-                        }}
+        display: "block",      // ✅ Required to center with margin auto
+        margin: "0 auto",      // ✅ This centers the input horizontally
+        maxWidth: "826px",
+        width: "100%",
+        maxHeight: "53px",
+        flexShrink: "0",
+        borderRadius: "10px",
+        border: "1px solid #444445",
+        background: "#FFF",
+        paddingLeft:"10px ",    
+        paddingTop:"10px",
+        paddingBottom:"10px",   // optional for better look
+        fontFamily: "Montserrat", // for matching font
+        fontSize: "16px",
+      }}
                     />
                 </div>
 
                 <button
                     type="submit"
                     style={{
-                        backgroundColor: "#6DB7F2",
+                        // backgroundColor: "#6DB7F2",
                         color: "#000",
                         padding: "10px 30px",
                         border: "none",
-                        borderRadius: "25px",
+                        // borderRadius: "25px",
                         fontWeight: "600",
                         fontSize: "16px",
                         cursor: "pointer",
+                        maxWidth: "231px",
+                        margin:"0 auto",
+maxHeight:" 67px",
+// flex-shrink: 0;
+borderRadius: "28px",
+background: "#69B3E7"
                     }}
                 >
                     Submit
