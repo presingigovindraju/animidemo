@@ -60,10 +60,26 @@ const AeroFlySection = () => {
                     >
                         The full-sized and full-featured 18″ wheelchair sets the standard for{" "}
                         <strong style={{ fontWeight: "700" }}>lighter-than-a-feather</strong> mobility
-                        at just <strong style={{ fontWeight: "700" }}>13 pounds.*</strong>{" "}
+                        at just <strong style={{ fontWeight: "700" }}>13 pounds.</strong>*
                         <br />
-                        <strong style={{ fontWeight: "700" }}>HCPCS K0004 + E0971</strong>
+                        <strong style={{ fontWeight: "700" }}>HCPCS K0004 + E0971</strong><br/>
+                        
                     </p>
+                    <p style={{
+                        maxWidth: "433px",
+                        maxHeight: "29px",
+                        flexShrink: 0,
+                        color: "#444445",
+textAlign: "center",
+fontFamily: "Montserrat",
+fontSize: "14px",
+fontStyle: "normal",
+fontWeight: 400,
+lineHeight: "20px", /* 178.571% */
+letterSpacing: "-0.25px",
+paddingTop:"12px"
+
+                    }}>*Frame only</p>
 
                     {/* Button */}
                     <button

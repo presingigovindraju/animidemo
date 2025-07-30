@@ -92,7 +92,7 @@ const UltraLightWeightSectionThree = () => {
               style={{
                 marginTop: "-30px",
                 textAlign: "center",
-                padding: "10px",
+                padding: "14px",
                 maxWidth: card.maxWidth,
                 marginLeft: "auto",
                 marginRight: "auto"

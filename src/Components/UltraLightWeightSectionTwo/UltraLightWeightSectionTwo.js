@@ -9,14 +9,14 @@ const UltraLightWeightSectionTwo = () => {
       img: UltraLightWeightSectionTwoImg1,
       alt: "Ultra-Lightweight",
       title: "Ultra-Lightweight",
-      desc: "Support your active lifestyle with one of the lightest rollators in its class, the AeroCarbon! Folding and transporting is easy with the ",
+      desc: "Support your active lifestyle with one of the lightest rollators in its class, the AeroCarbon™ Folding and transporting is easy with the ",
       strong: "11.5 lb carbon fiber frame.",
     },
     {
       img: UltraLightWeightSectionTwoImg2,
       alt: "Modern Design",
       title: "Modern Design",
-      desc: "The AeroCarbon features a ",
+      desc: "The AeroCarbon™ features a  ",
       strong: "sleek, contemporary look",
       end: " to compliment your aesthetic and blend seamlessly into your busy lifestyle.",
     },
@@ -24,7 +24,7 @@ const UltraLightWeightSectionTwo = () => {
       img: UltraLightWeightSectionTwoImg3,
       alt: "Smooth Mobility",
       title: "Built for Real Life",
-      desc: "The durable AeroCarbon is engineered with ",
+      desc: "The durable AeroCarbon™ is engineered with ",
       strong: "premium carbon fiber,",
       end: " for a rust-resistant frame that is strong and reliable for both travel and everyday use.",
     },
@@ -49,6 +49,7 @@ const UltraLightWeightSectionTwo = () => {
           margin: "0 auto",
           position: "relative",
           rowGap: "145px",
+          // border:"2px solid red"
         }}
       >
         {cards.map((card, index) => (
@@ -61,8 +62,9 @@ const UltraLightWeightSectionTwo = () => {
               minWidth: "280px",
               backgroundColor: "#E6F2FB",
               position: "relative",
-              paddingTop: "140px",
+              paddingTop: "145px",
               boxSizing: "border-box",
+          // border:"2px solid red"
             }}
           >
             {/* Floating Image */}
@@ -71,13 +73,14 @@ const UltraLightWeightSectionTwo = () => {
               alt={card.alt}
               style={{
                 position: "absolute",
-                top: "clamp(-100px, -9vw, -110px)",
+                top: "clamp(-100px, -9vw, -120px)",
                 left: "50%",
                 transform: "translateX(-50%)",
                 width: "clamp(220px, 25vw, 240px)",
 height: "clamp(206px, 24vw, 226px)",
                 aspectRatio: "120 / 113",
                 zIndex: 2,
+                // border:"2px solid red"
               }}
             />
 
@@ -86,7 +89,12 @@ height: "clamp(206px, 24vw, 226px)",
               style={{
                 marginTop: "-30px",
                 textAlign: "center",
-                padding: "15px 20px",
+                // padding: "18.5px 20px",
+                paddingTop:"20px",
+                paddingBottom:"24px",
+                paddingRight:"20px",
+                paddingLeft:"20px",
+          // border:"2px solid red"
               }}
             >
               <h3
