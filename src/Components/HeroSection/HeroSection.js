@@ -32,6 +32,7 @@
 
 import React from "react";
 import animationVideo from "./Videos/Aero Series Header animation.mp4";
+import animationVideo1 from "./Videos/Aero Series Header animation (1).mp4"
 // import aeroLogo from "./aeroLogo/aeroLogo.png";
 import aeroLogo1 from "./aeroLogo/aeroLogo1.png";
 import aeroLogo2 from "./aeroLogo/aeroLogo2.png";
@@ -52,8 +53,8 @@ const HeroSection = () => {
       <div
         style={{
           position: "absolute",
-          top: "26%", // Responsive top spacing
-          left: "2.6%", // Responsive left spacing
+          top: "24%", // Responsive top spacing
+          left: "5%", // Responsive left spacing
           // border: "2px solid red",
           maxWidth: "95%", // Prevents overflow
 
@@ -101,7 +102,7 @@ const HeroSection = () => {
 
       {/* Background video */}
       <video
-        src={animationVideo}
+        src={animationVideo1}
         autoPlay
         muted
         loop

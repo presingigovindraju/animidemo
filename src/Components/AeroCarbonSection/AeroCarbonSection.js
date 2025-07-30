@@ -91,7 +91,7 @@ const AeroCarbonSection = () => {
                             color: "#1B1746",
                             fontWeight: "700",
                             padding: "clamp(8px, 1.5vw, 10px) clamp(16px, 5vw, 24px)",
-                            fontSize: "clamp(16px, 2.5vw, 26px)",
+                            fontSize: "clamp(15px, 2.5vw, 25px)",
                             borderRadius: "28px",
                             border: "none",
                             cursor: "pointer",
