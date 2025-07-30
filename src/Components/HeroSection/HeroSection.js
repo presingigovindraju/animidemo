@@ -52,10 +52,11 @@ const HeroSection = () => {
       <div
         style={{
           position: "absolute",
-          top: "32%", // Responsive top spacing
-          left: "8%", // Responsive left spacing
+          top: "26%", // Responsive top spacing
+          left: "2.6%", // Responsive left spacing
           // border: "2px solid red",
           maxWidth: "95%", // Prevents overflow
+
         }}
       >
         <div id="bos"
@@ -64,7 +65,7 @@ const HeroSection = () => {
             lineHeight: "1.2",
             fontSize: "3.5vw",
             fontFamily: "Montserrat",
-            fontWeight: "700",
+            fontWeight: "600",
           }}
         >
           Introducing
@@ -76,7 +77,7 @@ const HeroSection = () => {
             lineHeight: "1.2",
             fontSize: "3.5vw",
             fontFamily: "Montserrat",
-            fontWeight: "700",
+            fontWeight: "600",
             display: "flex",
             alignItems: "center",
           }}

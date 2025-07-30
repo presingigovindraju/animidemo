@@ -1,0 +1,10 @@
+.break-sm {
+  display: inline;
+}
+
+/* On small screens, force break before "First-Class Experience" */
+@media (max-width: 600px) {
+  .break-sm {
+    display: block;
+  }
+}

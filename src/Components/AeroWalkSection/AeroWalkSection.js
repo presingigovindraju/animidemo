@@ -31,136 +31,142 @@
 
 
 
+
 import React from "react";
 import Aerowalk_animation from "./Video/Aerowalk_animation.mp4";
 import AeroWalkImg from "./Image/AeroWalkImg.png";
 import "./AeroWalkSection.css";
 
 const AeroWalkSection = () => {
-    return (
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        padding: "5px 20px",
+        fontFamily: "Montserrat",
+        maxWidth: "1100px",
+        margin: "25px auto",
+        // border:"2px solid green"
+      }}
+    >
+      {/* Text Content */}
+      <div
+        style={{
+          flex: "1 1 400px",
+          // maxwidth:"472px",
+          // border:"2px solid pink"
+        }}
+      >
         <div
-            style={{
-                display: "flex",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
-                padding: "5px 20px",
-                fontFamily: "Montserrat",
-                maxWidth: "1100px",
-                margin: "25px auto",
-                // border:"2px solid green"
-            }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+            alignItems: "center",
+            aspectRatio: "89 / 25",
+            // border: "2px solid red"
+          }}
         >
-            {/* Text Content */}
-            <div
-                style={{
-                    flex: "1 1 400px",
-                    // maxwidth:"472px",
-                    // border:"2px solid pink"
-                }}
+          <img
+            src={AeroWalkImg}
+            alt="AeroWalk Logo"
+            style={{
+              width: "clamp(220px, 30vw, 356px)", // width scales with viewport
+              height: "clamp(70px, 10vw, 100px)",
+              marginBottom: "16px",
+              // border:"2px solid red"
+              // border: "2px solid pink"
+            }}
+          />
+
+          {/* Combined paragraph with HCPCS included */}
+          <p
+            style={{
+              fontSize: "clamp(16px, 2vw, 20px)",
+              fontStyle: "normal",
+              fontWeight: "400",
+              color: "#444445",
+              lineHeight: "clamp(24px, 2.5vw, 30px)",
+              letterSpacing: "-0.25px",
+              textAlign: "center",
+              maxWidth: "472px",
+              overflow: "visible",
+              marginTop: "-10px",
+              marginBottom: "20px",
+              fontFamily: "Montserrat",
+            }}
+          >
+            <strong style={{ fontWeight: 700 }}>Command attention</strong> with the{" "}
+            <strong style={{ fontWeight: 700 }}>14.5-pound</strong> rollator that combines modern style and everyday ease.
+            <br />
+            <strong
+              style={{
+                fontWeight: 700,
+                display: "block",
+                marginTop: "10px",
+              }}
             >
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent:"space-around",
-                        alignItems: "center",
-                        aspectratio:" 89/25",
-                        // border: "2px solid red"
-                    }}
-                >
-                    <img
-                        src={AeroWalkImg}
-                        alt="AeroWalk Logo"
-                        style={{
-                            width: "clamp(200px, 30vw, 356px)",   // width will be at least 200px, up to 356px, scaling with viewport width
-                            height: "clamp(70px, 10vw, 100px)", 
-                            marginBottom: "16px",
-                            // border:"2px solid red"
-                            // border: "2px solid pink"
-                        }}
-                    />
+              HCPCS E0143 + E0156
+            </strong>
+          </p>
 
-                    {/* ✅ Split into 4 lines */}
-                    <p style={{fontSize: "clamp(16px, 2vw, 20px)",fontStyle:"normal",fontWeight: "400", color: "#444445", lineHeight: "clamp(24px, 2.5vw, 30px)", marginTop: "-15px" ,letterSpacing:"-0.25px"}}>
-                        <strong style={{fontWeight:"700"}}>Command attention</strong> with the
-                    </p>
-                    <p style={{ fontSize: "clamp(16px, 2vw, 20px)",fontStyle:"normal",fontWeight: "400", color: "#444445",  lineHeight: "clamp(24px, 2.5vw, 30px)",letterSpacing:"-0.25px"}}>
-                        <strong style={{fontWeight:"700"}}>14.5-pound</strong> rollator that combines
-                    </p>
-                    <p style={{fontSize: "clamp(16px, 2vw, 20px)",fontStyle:"normal",fontWeight: "400", color: "#444445", lineHeight: "clamp(24px, 2.5vw, 30px)",letterSpacing:"-0.25px"}}>
-                        modern style and everyday ease.
-                    </p>
-                    {/* <p style={{ fontSize: "16px", color: "#444", lineHeight: "1.6", marginBottom: "10px" }}>
-                        
-                    </p> */}
-
-                    <p
-                        style={{
-                            fontWeight: "700",
-                           fontSize: "clamp(16px, 2vw, 20px)",
-                            marginTop: "10px",
-                            marginBottom: "20px",
-                            fontStyle:"normal",
-                            color: "#444445",
-                            lineHeight: "clamp(24px, 2.5vw, 30px)",
-                            letterSpacing:"-0.25px"
-                        }}
-                    >
-                        HCPCS E0143 + E0156
-                    </p>
-
-                    <button
-                        type="button"
-                        style={{
-                            backgroundColor: "#69B3E7",
-                            color: "#1B1746",
-                            fontWeight: "600",
-                            padding: "clamp(8px, 1.5vw, 10px) clamp(16px, 5vw, 24px)",
-                            fontSize: "clamp(16px, 2.5vw, 26px)",
-                            borderRadius: "28px",
-                            border: "none",
-                            cursor: "pointer",
-                            maxWidth:"254px",
-                            maxHeight:"67px",
-                            // border:"2px solid red",
-                            fontFamily:"Montserrat",
-                            fontStyle:"normal",
-                            fontWeight:"700",
-                            lineHeight: "clamp(22px, 3vw, 30px)",
-                            letterSpacing:"-0.25px"
-                        }}
-                    >
-                        Get in Touch
-                    </button>
-                </div>
-            </div>
-
-            {/* Video Content */}
-            <div style={{
-                 flex: "1 1 500px",
-                  textAlign: "center",
-                  maxHeight:"336px",
-                //   border:"2px solid red",
-                  display:"flex",
-                  alignItems:"center",
-                  justifyContent:"center",
-                //   marginTopTop:"20px"
-                   }}>
-                <video className="AeroWalkSection-video-section"
-                    src={Aerowalk_animation}
-                    autoPlay
-                    muted
-                    playsInline
-                    loop
-                    style={{ width: "100%", maxWidth: "500px" ,
-        border:"none"}}
-                />
-            </div>
+          <button
+            type="button"
+            style={{
+              backgroundColor: "#69B3E7",
+              color: "#1B1746",
+              fontWeight: "600",
+              padding: "clamp(8px, 1.5vw, 10px) clamp(16px, 5vw, 24px)",
+              fontSize: "clamp(16px, 2.5vw, 26px)",
+              borderRadius: "28px",
+              border: "none",
+              cursor: "pointer",
+              maxWidth: "254px",
+              maxHeight: "67px",
+              // border:"2px solid red",
+              fontFamily: "Montserrat",
+              fontStyle: "normal",
+              fontWeight: "700",
+              lineHeight: "clamp(22px, 3vw, 30px)",
+              letterSpacing: "-0.25px",
+            }}
+          >
+            Get in Touch
+          </button>
         </div>
-    );
+      </div>
+
+      {/* Video Content */}
+      <div
+        style={{
+          flex: "1 1 500px",
+          textAlign: "center",
+          maxHeight: "336px",
+          // border:"2px solid red",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          // marginTopTop:"20px"
+        }}
+      >
+        <video
+          className="AeroWalkSection-video-section"
+          src={Aerowalk_animation}
+          autoPlay
+          muted
+          playsInline
+          loop
+          style={{ width: "100%", maxWidth: "500px", border: "none" }}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default AeroWalkSection;
+
 
 
 

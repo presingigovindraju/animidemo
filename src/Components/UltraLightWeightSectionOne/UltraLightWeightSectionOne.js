@@ -28,7 +28,6 @@
 
 
 
-
 import React from "react";
 import UltraLightWeightImg1 from "./Images/UltraLightWeightImg1.png";
 import UltraLightWeightImg2 from "./Images/UltraLightWeightImg2.png";
@@ -66,12 +65,11 @@ const UltraLightWeightSectionOne = () => {
         <div
             style={{
                 paddingTop: "120px",
-                paddingLeft:"20px",
-                paddingRight:"20px",
-                paddingBottom:"20px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
+                paddingBottom: "20px",
                 fontFamily: "Montserrat",
-                // border: "2px solid gray"
-                // border: "2px solid red",
+                // border:"2px solid red"
             }}
         >
             <div
@@ -82,11 +80,8 @@ const UltraLightWeightSectionOne = () => {
                     maxWidth: "1280px",
                     margin: "0 auto",
                     position: "relative",
-                    rowGap: "145px", // Add vertical space between rows
-                    //   columnGap: "30px", 
-                    // border: "2px solid red",
-                    //   maxHeight:"358px"
-                    // padding:
+                    rowGap: "145px",
+                // border:"2px solid red"
                 }}
             >
                 {cards.map((card, index) => (
@@ -99,7 +94,7 @@ const UltraLightWeightSectionOne = () => {
                             minWidth: "280px",
                             backgroundColor: "#E6F2FB",
                             position: "relative",
-                            paddingTop: "140px", // space for image
+                            paddingTop: "140px",
                             boxSizing: "border-box",
                             // border:"2px solid red"
                         }}
@@ -110,61 +105,91 @@ const UltraLightWeightSectionOne = () => {
                             alt={card.alt}
                             style={{
                                 position: "absolute",
-                                top: "-120px",
+                                top: "clamp(-100px, -9vw, -110px)",
                                 left: "50%",
                                 transform: "translateX(-50%)",
-                                // width: "120px",width: 240px;
-                                width: "240px",
-                                height: " 226px",
-                                aspectratio: 120 / 113,
+                                width: "clamp(220px, 25vw, 240px)",
+                                height: "clamp(206px, 24vw, 226px)",
+                                aspectRatio: "120 / 113",
                                 zIndex: 2,
-                                // border: "2px solid gray"
+                                // border:"2px solid red"
                             }}
                         />
 
                         {/* Text Content */}
-                        <div style={{marginTop:"-30px", textAlign: "center", maxwidth: "377px", padding: "20px 20px"}}>
+                        <div
+                            style={{
+                                marginTop: "-30px",
+                                textAlign: "center",
+                                // padding: "20px 20px",
+                                paddingTop:"8px",
+                                paddingRight:"20px",
+                                paddingLeft:"20px",
+                                paddingBottom:"30px",
+                            }}
+                        >
                             <h3
                                 style={{
                                     fontWeight: "700",
-                                    // marginBottom: "6px",
                                     color: "#444445",
                                     fontFamily: "Montserrat",
-                                    fontsize: "24px",
+                                    fontSize: "24px",
                                     fontStyle: "normal",
                                     lineHeight: "30px",
-                                    letterSpacing: "-0.25px"
+                                    letterSpacing: "-0.25px",
                                 }}
                             >
                                 {card.title}
                             </h3>
-                            <p style={{
-                                color: "#444445",
-                                fontfamily: "Montserrat",
-                                fontsize: "20px",
-                                fontstyle: "normal",
-                                fontweight: "400",
-                                lineheight: "30px",
-                                letterspacing: "-0.25px"
-                            }}>
-                                {card.desc}
-                                <strong style={{
+                            <p
+                                style={{
                                     color: "#444445",
-                                    fontfamily: "Montserrat",
-                                    fontsize: "20px",
-                                    fontstyle: "normal",
-                                    fontweight: " 700",
-                                    lineheight: " 30px",
-                                    letterspacing: " -0.25px"
+                                    fontFamily: "Montserrat",
+                                    fontSize: "20px",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    lineHeight: "30px",
+                                    letterSpacing: "-0.25px",
+                                    margin: "0 auto",
+                                    maxWidth:
+                                        index === 0
+                                            ? "377px"
+                                            : index === 1
+                                            ? "318px"
+                                            : index === 2
+                                            ? "330px"
+                                            : "100%",
+                                    maxHeight:
+                                        index === 0
+                                            ? "180px"
+                                            : index === 1
+                                            ? "192px"
+                                            : index === 2
+                                            ? "192px"
+                                            : "auto",
                                 }}
-                                >{card.strong}</strong>
+                            >
+                                {card.desc}
+                                <strong
+                                    style={{
+                                        color: "#444445",
+                                        fontFamily: "Montserrat",
+                                        fontSize: "20px",
+                                        fontStyle: "normal",
+                                        fontWeight: "700",
+                                        lineHeight: "30px",
+                                        letterSpacing: "-0.25px",
+                                    }}
+                                >
+                                    {card.strong}
+                                </strong>
                                 {card.end}
                             </p>
                         </div>
                     </div>
                 ))}
             </div>
-        </div >
+        </div>
     );
 };
 

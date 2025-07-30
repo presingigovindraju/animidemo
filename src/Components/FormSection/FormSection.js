@@ -161,7 +161,7 @@ const FormSection = () => {
 <div
             style={{
                 // maxWidth: "1091px",
-                margin: "60px auto",
+                margin: "30px auto",
                 textAlign: "center",
                 fontFamily: "Montserrat",
                 padding: "0 20px",
@@ -175,7 +175,7 @@ textAlign: "center",
 fontFamily: "Montserrat",
 fontSize: "clamp(24px, 4vw, 40px)",
 fontStyle: "normal",
-fontWeight: "600",
+fontWeight:600,
 lineHeight:"1.2", 
 letterSpacing:  "-0.25px",
 // border:"2px solid red",
@@ -185,7 +185,14 @@ margin:"0 auto"
                
                 }}
             >
-                See how <svg xmlns="http://www.w3.org/2000/svg" style={{}} width="3.5em" height="0.8em" viewBox="0 0 104 25" fill="none">
+                See how <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 104 25"
+  width="clamp(60px, 12vw, 104px)"
+  height="clamp(15px, 3vw, 25px)"
+  style={{ verticalAlign: "middle" }}
+  fill="none"
+>
                     <g clip-path="url(#clip0_119_60)">
                         <path d="M14.126 3.61377L14.1091 3.61123L14.0104 3.59467C13.4937 3.5106 12.9692 3.46729 12.4446 3.46729C11.9201 3.46729 11.3969 3.50932 10.8788 3.59467C6.30088 4.33858 2.94336 8.23902 2.94336 12.7891C2.94336 17.3392 6.23596 21.1683 10.7555 21.9632L10.7737 21.9657L10.8788 21.9823C11.3956 22.0663 11.9201 22.1084 12.4446 22.1084C12.9692 22.1084 13.4924 22.0663 14.0104 21.9823C18.5871 21.2384 21.9459 17.3379 21.9459 12.7878C21.9459 8.23774 18.6494 4.40482 14.126 3.6125V3.61377ZM13.8261 20.8944C13.3704 20.9683 12.9069 21.0065 12.4446 21.0065C11.9824 21.0065 11.5189 20.9696 11.0632 20.8944L10.9541 20.8766C6.97082 20.176 4.07032 16.7571 4.07032 12.7891C4.07032 8.82115 7.02925 5.3398 11.0645 4.68378C11.5202 4.6099 11.9837 4.57169 12.4459 4.57169C12.9082 4.57169 13.3704 4.6099 13.8261 4.68378L13.9287 4.70034C17.9159 5.3984 20.8203 8.81733 20.8203 12.7891C20.8203 16.7609 17.8613 20.2384 13.8274 20.8944H13.8261Z" fill="#454546" />
                         <path d="M13.9871 0.672579C13.4755 0.610162 12.9601 0.57959 12.4446 0.57959C11.9292 0.57959 11.4137 0.610162 10.9022 0.672579C4.67664 1.42668 0 6.63788 0 12.7892C0 18.9404 4.67664 24.1516 10.9035 24.9057C11.415 24.9682 11.9305 24.9987 12.4459 24.9987C12.9614 24.9987 13.4768 24.9669 13.9884 24.9057C16.2877 24.6268 18.4534 23.7262 20.2555 22.2982C20.3606 22.2154 20.5009 22.1989 20.6229 22.2562C20.7449 22.3135 20.8203 22.4307 20.8203 22.5632V24.6H24.8906V12.7892C24.8906 6.63788 20.2139 1.42668 13.9871 0.672579ZM14.0104 21.9836C13.4937 22.0677 12.9692 22.1097 12.4446 22.1097C11.9201 22.1097 11.3956 22.0677 10.8788 21.9836L10.7737 21.967L10.7555 21.9645C6.23465 21.1696 2.94335 17.2934 2.94335 12.7904C2.94335 8.28748 6.30217 4.33991 10.8801 3.59472C11.3969 3.51065 11.9214 3.46734 12.4459 3.46734C12.9705 3.46734 13.495 3.50938 14.0117 3.59472L14.1104 3.61128L14.126 3.61383C18.6494 4.40615 21.9459 8.28366 21.9459 12.7892C21.9459 17.2947 18.5884 21.2397 14.0104 21.9836Z" fill="#454546" />
@@ -249,7 +256,8 @@ marginTop:"5px"
         fontWeight: "600",
         lineHeight: "clamp(20px, 3vw, 30px)", 
         letterSpacing: "-0.25px",
-paddingLeft:"15px"
+paddingLeft:"2px",
+paddingBottom:"6px"
       }}
     >
       First Name
@@ -296,7 +304,8 @@ fontStyle: "normal",
 fontWeight: "600",
 lineHeight: "clamp(20px, 3vw, 30px)", 
 letterSpacing: "-0.25px",
-paddingLeft:"15px"
+paddingLeft:"2px",
+paddingBottom:"6px"
                            }}>Last Name</label>
                     <input
                         type="text"
@@ -339,7 +348,8 @@ fontStyle: "normal",
 fontWeight: "600",
 lineHeight: "clamp(20px, 3vw, 30px)", 
 letterSpacing: "-0.25px",
-paddingLeft:"15px"
+paddingLeft:"2px",
+paddingBottom:"6px"
                             }}>Email</label>
                     <input
                         type="email"
@@ -369,22 +379,43 @@ paddingLeft:"15px"
                     type="submit"
                     style={{
                         // backgroundColor: "#6DB7F2",
-                        color: "#000",
-                        padding: "10px 30px",
-                        border: "none",
-                        // borderRadius: "25px",
-                        fontWeight: "600",
-                        fontSize: "16px",
-                        cursor: "pointer",
-                        maxWidth: "231px",
+//                         color: "#000",
+//                         padding: "10px 30px",
+//                         border: "none",
+//                         // borderRadius: "25px",
+//                         fontWeight: "600",
+//                         fontSize: "16px",
+//                         cursor: "pointer",
+//                         maxWidth: "231px",
+// maxHeight:" 67px",
+// // flex-shrink: 0;
+// borderRadius: "28px",
+// background: "#69B3E7",
+
+                            backgroundColor: "#69B3E7",
+                            color: "#1B1746",
+                            fontWeight: "600",
+                            padding: "clamp(8px, 1.5vw, 10px) clamp(16px, 5vw, 24px)",
+                            fontSize: "clamp(16px, 2.5vw, 26px)",
+                            borderRadius: "28px",
+                            border: "none",
+                            cursor: "pointer",
+                            maxWidth:"231px",
+                            maxHeight:"67px",
+                            // border:"2px solid red",
+                            fontFamily:"Montserrat",
+                            fontStyle:"normal",
+                            fontWeight:"700",
+                            lineHeight: "clamp(22px, 3vw, 30px)",
+                            letterSpacing:"-0.25px",
                         margin:"0 auto",
-maxHeight:" 67px",
-// flex-shrink: 0;
-borderRadius: "28px",
-background: "#69B3E7"
+                        
                     }}
                 >
-                    Submit
+                   <p style={{
+                    maxWidth:"180px",
+                    maxHeight:"29px"
+                   }}> Submit</p>
                 </button>
             </form>
         </div>
