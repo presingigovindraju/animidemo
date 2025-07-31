@@ -79,9 +79,12 @@ const AeroCarbonSection = () => {
                             overflow: "hidden",
                             marginTop: "-8px",
                             marginBottom: "20px",
+                            // border:"2px solid red",
+                            paddingBottom:"8px",
+                            paddingTop:"8px"
                         }}
                     >
-                        At just <strong style={{ fontWeight: "700" }}>11.5 pounds,</strong> this carbon frame rollator delivers standout comfort and <strong style={{ fontWeight: "700" }}>effortless portability.</strong> Pending HCPCS E0143 + E0156.
+                        At just <strong style={{ fontWeight: "700" }}>11.5 pounds,</strong> this carbon frame rollator delivers standout comfort and <strong style={{ fontWeight: "700" }}>effortless portability.</strong><br/> <strong style={{ fontWeight: "700" }}>Pending HCPCS E0143 + E0156.</strong>
                     </p>
 
                     <button

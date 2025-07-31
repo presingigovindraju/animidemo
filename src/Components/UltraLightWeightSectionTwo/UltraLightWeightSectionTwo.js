@@ -87,11 +87,11 @@ height: "clamp(206px, 24vw, 226px)",
             {/* Text Content */}
             <div
               style={{
-                marginTop: "-30px",
+                marginTop: "-33px",
                 textAlign: "center",
                 // padding: "18.5px 20px",
-                paddingTop:"20px",
-                paddingBottom:"24px",
+                paddingTop: "clamp(17px, 3vw, 22px)",
+                paddingBottom: "clamp(16px, 4vw, 30px)",
                 paddingRight:"20px",
                 paddingLeft:"20px",
           // border:"2px solid red"
@@ -114,7 +114,7 @@ height: "clamp(206px, 24vw, 226px)",
                 style={{
                   color: "#444445",
                   fontFamily: "Montserrat",
-                  fontSize: "20px",
+                  fontSize: "clamp(16px, 2.5vw, 20px)",
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "30px",
@@ -139,7 +139,7 @@ height: "clamp(206px, 24vw, 226px)",
                   style={{
                     color: "#444445",
                     fontFamily: "Montserrat",
-                    fontSize: "20px",
+                    fontSize: "clamp(16px, 2.5vw, 20px)",
                     fontStyle: "normal",
                     fontWeight: "700",
                     lineHeight: "30px",

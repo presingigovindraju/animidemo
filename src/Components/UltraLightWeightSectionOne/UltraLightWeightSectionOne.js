@@ -119,13 +119,14 @@ const UltraLightWeightSectionOne = () => {
                         {/* Text Content */}
                         <div
                             style={{
-                                marginTop: "-30px",
+                                marginTop: " -33px",
                                 textAlign: "center",
                                 // padding: "20px 20px",
-                                paddingTop:"22px",
+                                paddingTop: "clamp(17px, 3vw, 22px)",
                                 paddingRight:"20px",
                                 paddingLeft:"20px",
-                                paddingBottom:"30px",
+                                paddingBottom: "clamp(16px, 4vw, 30px)",
+                                // border:"2px solid red"
                             }}
                         >
                             <h3
@@ -145,7 +146,7 @@ const UltraLightWeightSectionOne = () => {
                                 style={{
                                     color: "#444445",
                                     fontFamily: "Montserrat",
-                                    fontSize: "20px",
+                                    fontSize: "clamp(16px, 2.5vw, 20px)",
                                     fontStyle: "normal",
                                     fontWeight: "400",
                                     lineHeight: "30px",
@@ -174,7 +175,7 @@ const UltraLightWeightSectionOne = () => {
                                     style={{
                                         color: "#444445",
                                         fontFamily: "Montserrat",
-                                        fontSize: "20px",
+                                        fontSize: "clamp(16px, 2.5vw, 20px)",
                                         fontStyle: "normal",
                                         fontWeight: "700",
                                         lineHeight: "30px",

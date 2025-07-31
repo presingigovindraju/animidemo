@@ -70,7 +70,8 @@ const UltraLightWeightSectionThree = () => {
               position: "relative",
               paddingTop: "140px",
               paddingBottom: "2px",
-              boxSizing: "border-box"
+              boxSizing: "border-box",
+              // border:"2px solid red"
             }}
           >
             <img
@@ -90,7 +91,7 @@ const UltraLightWeightSectionThree = () => {
 
             <div
               style={{
-                marginTop: "-30px",
+                marginTop: "-34.5px",
                 textAlign: "center",
                 padding: "14px",
                 maxWidth: card.maxWidth,
@@ -112,11 +113,12 @@ const UltraLightWeightSectionThree = () => {
               <p
                 style={{
                   color: "#444445",
-                  fontSize: "20px",
+                  fontSize: "clamp(16px, 2.5vw, 20px)",
                   fontWeight: "400",
                   lineHeight: "30px",
                   letterSpacing: "-0.25px",
-                  wordWrap: "break-word"
+                  wordWrap: "break-word",
+                  // border:"2px solid red"
                 }}
               >
                 {card.desc}{" "}

@@ -73,7 +73,7 @@ const AeroWalkSection = () => {
             src={AeroWalkImg}
             alt="AeroWalk Logo"
             style={{
-              width: "clamp(220px, 30vw, 356px)", // width scales with viewport
+              width: "clamp(240px, 30vw, 356px)", // width scales with viewport
               height: "clamp(70px, 10vw, 100px)",
               marginBottom: "16px",
               // border:"2px solid red"

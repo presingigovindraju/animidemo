@@ -64,7 +64,7 @@ const HeroSection = () => {
           style={{
             color: "#FFF",
             lineHeight: "1.2",
-            fontSize: "3.5vw",
+            fontSize: "4.5vw",
             fontFamily: "Montserrat",
             fontWeight: "600",
           }}
@@ -76,7 +76,7 @@ const HeroSection = () => {
           style={{
             color: "#FFF",
             lineHeight: "1.2",
-            fontSize: "3.5vw",
+            fontSize: "4.5vw",
             fontFamily: "Montserrat",
             fontWeight: "600",
             display: "flex",
@@ -92,6 +92,7 @@ const HeroSection = () => {
               height: "2.5vw", // Responsive height
               width: "auto",   // Maintain aspect ratio
               verticalAlign: "middle",
+              // border:"2px solid red"
             }}
           />
 

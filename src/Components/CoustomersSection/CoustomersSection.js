@@ -85,14 +85,14 @@ const CustomersSection = () => {
           margin:"0 auto",
           letterSpacing: "clamp(-0.5px, -0.1vw, -0.25px)",
           // border:"2px solid red"
-    fontSize: "clamp(14px, 2.5vw, 20px)", // ✅ responsive font size
+    fontSize: "clamp(16px, 2.5vw, 20px)", // ✅ responsive font size
         }}
       >
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First-class mobility doesn't have to mean paying a premium price. The
         new, ultra-lightweight Aero line blends <strong style={{
           color: "#444445",
 fontFamily: "Montserrat",
-fontSize: "clamp(14px, 2.5vw, 20px)",
+fontSize: "clamp(12px, 2.5vw, 20px)",
 fontStyle: "normal",
 fontWeight: 700,
 lineHeight: "clamp(28px, 4vw, 43px)",
@@ -100,7 +100,7 @@ letterSpacing: "clamp(-0.5px, -0.1vw, -0.25px)"
         }}>sleek, </strong> <strong style={{
           color: "#444445",
 fontFamily: "Montserrat",
-fontSize: "clamp(14px, 2.5vw, 20px)",
+fontSize: "clamp(12px, 2.5vw, 20px)",
 fontStyle: "normal",
 fontWeight: "700",
 lineHeight: "clamp(20px, 3.5vw, 30px)",
@@ -109,7 +109,7 @@ letterSpacing: "clamp(-0.5px, -0.1vw, -0.25px)"
         <strong style={{
           color: "#444445",
 fontFamily: "Montserrat",
-fontSize: "clamp(14px, 2.5vw, 20px)",
+fontSize: "clamp(12px, 2.5vw, 20px)",
 fontStyle: "normal",
 fontWeight: "700",
 lineHeight: "clamp(20px, 3.5vw, 30px)",
@@ -118,7 +118,7 @@ letterSpacing: "clamp(-0.5px, -0.1vw, -0.25px)"
         With  <strong style={{
           color: "#444445",
 fontFamily: "Montserrat",
-fontSize: "clamp(14px, 2.5vw, 20px)",
+fontSize: "clamp(12px, 2.5vw, 20px)",
 fontStyle: "normal",
 fontWeight: "700",
 lineHeight: "clamp(20px, 3.5vw, 30px)",
